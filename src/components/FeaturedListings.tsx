@@ -41,7 +41,7 @@ export default function FeaturedListings() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Explore Our Curated Properties in Tokyo</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover a handpicked selection of Tokyo's finest properties, tailored to meet your unique lifestyle needs
+          Pick 6 favorites, and we’ll set up viewings!
           </p>
         </div>
 

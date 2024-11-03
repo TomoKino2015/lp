@@ -18,11 +18,13 @@ export default function PropertyCard({
   location,
   beds,
   baths,
-  sqm
+  sqm,
 }: PropertyCardProps) {
   return (
-    <div className="group relative rounded-[20px] bg-white transition-shadow duration-300 hover:shadow-2xl">
-      <div className="relative aspect-[343/257] overflow-hidden rounded-t-[20px]">
+    <div className="group relative rounded-2xl bg-white transition-shadow duration-300 hover:shadow-2xl">
+      
+      {/* Property Image and Like Button */}
+      <div className="relative aspect-[4/3] overflow-hidden rounded-t-2xl">
         <img
           src={image}
           alt={title}
@@ -32,10 +34,14 @@ export default function PropertyCard({
           <Heart className="w-5 h-5 text-gray-600" />
         </button>
       </div>
+
+      {/* Property Details */}
       <div className="p-4">
         <p className="text-xl font-bold text-primary">{price}</p>
         <h3 className="font-semibold text-gray-800 mb-1">{title}</h3>
         <p className="text-gray-600 text-sm mb-4">{location}</p>
+        
+        {/* Property Specs */}
         <div className="flex items-center gap-4 text-sm text-gray-600">
           <div className="flex items-center gap-1">
             <Home className="w-4 h-4" />
