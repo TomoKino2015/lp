@@ -15,7 +15,8 @@ export default function Header() {
           >
             <Menu className="h-6 w-6" />
           </button>
-          <a href="/" className="flex flex-col items-center gap-1">
+          <a href="/" className="flex items-center gap-2">
+            <img src="/at_hearth_logo_yoko_vector.jpeg" alt="AtHearth Logo" className="h-8" />
             <span className="text-2xl font-bold">AtHearth</span>
             <span className="text-sm text-gray-500">since 2015</span>
           </a>
