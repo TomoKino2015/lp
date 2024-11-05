@@ -1,7 +1,7 @@
 import React from 'react';
 
 const stats = [
-  { number: "10+", label: "Years Serving 5,000+ Expats in Tokyo" },
+  { number: "10 years", label: "Serving 5,000+ Expats in Tokyo" },
   { number: "2,000+", label: "Foreigner-Friendly Listings" },
   { number: "56+", label: "Corporate & Management Partners" },
   { number: "¥150M", label: "Raised from Top VCs" }
