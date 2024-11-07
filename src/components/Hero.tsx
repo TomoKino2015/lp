@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative bg-cover bg-no-repeat h-[600px]" 
       style={{ 
         backgroundImage: 'url(/cityscape-of-large-city-with-illuminated-skyscrape-2023-11-27-05-06-09-utc.jpg)',
-        backgroundPosition: 'center 20%', // 写真を下に移動
+        backgroundPosition: 'center 0%', // 写真を下に移動
       }}
     >
       {/* 背景の暗さ調整 */}
@@ -27,23 +27,34 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             
             {/* Location Selector */}
-            <div className="relative col-span-1 md:col-span-2">
+            <div className="relative col-span-1"> 
               <select className="w-full p-3 rounded-lg bg-gray-50 appearance-none">
-                <option>Select Location</option>
+                <option>Location</option>
                 <option>Shibuya</option>
                 <option>Minato</option>
                 <option>Setagaya</option>
               </select>
               <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
+            
+            </div>
+            {/* Size Selector */}
+            <div className="relative col-span-1"> 
+              <select className="w-full p-3 rounded-lg bg-gray-50 appearance-none">
+                <option>Size</option>
+                <option>30㎡-50㎡</option>
+                <option>50㎡-60㎡</option>
+                <option>60㎡ or more</option>
+              </select>
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
             </div>
 
-            {/* Bedrooms Selector */}
-            <div className="relative">
+            {/* Rent Selector */}
+            <div className="relative col-span-1"> 
               <select className="w-full p-3 rounded-lg bg-gray-50 appearance-none">
                 <option>Rent</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3+</option>
+                <option>150k-200k</option>
+                <option>200k-250k</option>
+                <option>250k-300k</option>
               </select>
               <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
             </div>
@@ -51,7 +62,7 @@ export default function Hero() {
             {/* Search Button */}
             <button className="w-full bg-primary hover:bg-primary/90 text-white p-3 rounded-lg flex items-center justify-center gap-2">
               <Search className="w-5 h-5" />
-              Search
+              <strong>Search</strong>
             </button>
           </div>
         </div>
