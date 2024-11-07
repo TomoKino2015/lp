@@ -27,7 +27,7 @@ export default function PropertyCard({
       <div className="relative aspect-[4/3] overflow-hidden rounded-t-2xl">
         <img
           src={image}
-          alt={title}
+  alt={title}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <button className="absolute top-3 right-3 bg-white/90 p-2 rounded-full shadow-md hover:bg-white">
