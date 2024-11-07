@@ -4,18 +4,22 @@ import { Search, ChevronDown } from 'lucide-react';
 export default function Hero() {
   return (
     <div 
-      className="relative bg-cover bg-center bg-no-repeat h-[600px]" 
-      style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1920&q=80)' }}
+      className="relative bg-cover bg-no-repeat h-[600px]" 
+      style={{ 
+        backgroundImage: 'url(/cityscape-of-large-city-with-illuminated-skyscrape-2023-11-27-05-06-09-utc.jpg)',
+        backgroundPosition: 'center 20%', // 写真を下に移動
+      }}
     >
-      <div className="absolute inset-0 bg-black/60" />
+      {/* 背景の暗さ調整 */}
+      <div className="absolute inset-0 bg-black/40" /> 
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         
         {/* Main Title and Description */}
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-        Discover Tokyo’s Foreigner-Friendly Real Estate Platform
+        Tokyo’s Trusted Platform for Expats
         </h1>
         <p className="text-xl text-gray-200 mb-12 max-w-2xl">
-        Simplifying Tokyo Rentals for Expats with Exclusive Listings and Support
+        Exclusively Curated Listings with Local Expertise
         </p>
         
         {/* Search Filters */}
@@ -47,7 +51,7 @@ export default function Hero() {
             {/* Search Button */}
             <button className="w-full bg-primary hover:bg-primary/90 text-white p-3 rounded-lg flex items-center justify-center gap-2">
               <Search className="w-5 h-5" />
-              Search
+              <strong>Search</strong>
             </button>
           </div>
         </div>

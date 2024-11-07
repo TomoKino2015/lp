@@ -16,26 +16,31 @@ export default function Header() {
             <Menu className="h-6 w-6" />
           </button>
           <a href="/" className="flex items-center gap-2">
-            <img src="/at_hearth_logo_yoko_vector.jpeg" alt="AtHearth Logo" className="h-8" />
-            <span className="text-2xl font-bold">AtHearth</span>
-            <span className="text-sm text-gray-500">since 2015</span>
+            {/* ロゴサイズを1.5倍に変更 */}
+            <img src="/at_hearth_logo_yoko_vector.svg" alt="AtHearth Logo" className="h-12" />
           </a>
         </div>
 
         {/* Navigation Links */}
+        {/* 削除: Navigation Links */}
+        {/* 
         <nav className="hidden lg:flex items-center gap-8">
           {['Rent', 'Buy', 'Short-term', 'Sell', 'Management'].map((link, index) => (
             <a key={index} href={`/${link.toLowerCase()}`} className="nav-link">{link}</a>
           ))}
         </nav>
+        */}
 
         {/* Language & CTA Button */}
         <div className="flex items-center gap-4">
+          {/* 削除: Language Button */}
+          {/* 
           <button className="hidden md:block text-sm text-gray-600 hover:text-primary">
             EN | JP
           </button>
+          */}
           <button className="btn-primary rounded-full px-6 py-2">
-            Start here
+            <strong>Customize Search</strong>
           </button>
         </div>
 
